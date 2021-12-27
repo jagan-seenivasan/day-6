@@ -1,12 +1,8 @@
-#! /bin/bash -x
+#!/bin/bash -x
 
-echo -e "Enter number: \c"
-read m
 n=2
-
-for ((i=1, pow=n; i<m; i++))
+while [ $n -le 256 ]
 do 
-	((pow *= n))
+	echo "$n"
+	n=$(( n+1 ))
 done
-echo $pow
-
